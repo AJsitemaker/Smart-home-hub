@@ -1,0 +1,757 @@
+index.html
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Tech Hub - Best Smart Home Devices & Reviews 2025</title>
+    <meta name="description" content="Expert reviews and guides for the best smart home devices in 2025. Compare smart thermostats, security cameras, lighting systems, and automation tools. Save money with our buying guides.">
+    <meta name="keywords" content="smart home devices, smart home reviews, best smart thermostat 2025, smart security cameras, home automation, DIY smart home, smart lighting systems, smart home installation guide">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://smarthometechhub.com">
+
+```
+<!-- Open Graph Meta Tags -->
+<meta property="og:title" content="Smart Home Tech Hub - Best Smart Home Device Reviews 2025">
+<meta property="og:description" content="Expert reviews and buying guides for smart home devices. Find the best smart thermostats, security systems, and automation tools.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://smarthometechhub.com">
+
+<!-- Schema.org structured data -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Smart Home Tech Hub",
+    "url": "https://smarthometechhub.com",
+    "description": "Expert reviews and guides for smart home devices and home automation technology",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Smart Home Tech Hub"
+    }
+}
+</script>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    /* Header */
+    header {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        transition: all 0.3s ease;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+    }
+    
+    .logo {
+        font-size: 1.8rem;
+        font-weight: 700;
+        background: linear-gradient(45deg, #667eea, #764ba2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    
+    .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+    }
+    
+    .nav-links a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        transition: color 0.3s ease;
+        position: relative;
+    }
+    
+    .nav-links a:hover {
+        color: #667eea;
+    }
+    
+    .nav-links a::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        background: #667eea;
+        transition: width 0.3s ease;
+    }
+    
+    .nav-links a:hover::after {
+        width: 100%;
+    }
+    
+    /* Hero Section */
+    .hero {
+        background: linear-gradient(135deg, rgba(102, 126, 234, 0.9), rgba(118, 75, 162, 0.9));
+        color: white;
+        padding: 150px 0 100px;
+        text-align: center;
+        margin-top: 80px;
+    }
+    
+    .hero h1 {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        animation: fadeInUp 1s ease;
+    }
+    
+    .hero p {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+        opacity: 0.9;
+        animation: fadeInUp 1s ease 0.2s both;
+    }
+    
+    .cta-button {
+        background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+        color: white;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 50px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+        animation: fadeInUp 1s ease 0.4s both;
+        box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+    }
+    
+    .cta-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+    }
+    
+    /* Main Content */
+    main {
+        background: white;
+        padding: 80px 0;
+    }
+    
+    .section {
+        margin-bottom: 80px;
+    }
+    
+    .section h2 {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 3rem;
+        color: #333;
+        position: relative;
+    }
+    
+    .section h2::after {
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 4px;
+        background: linear-gradient(45deg, #667eea, #764ba2);
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 2px;
+    }
+    
+    /* Featured Products Grid */
+    .products-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+    
+    .product-card {
+        background: white;
+        border-radius: 15px;
+        padding: 2rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        border: 1px solid #f0f0f0;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .product-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(45deg, #667eea, #764ba2);
+    }
+    
+    .product-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+    
+    .product-card h3 {
+        font-size: 1.4rem;
+        color: #333;
+        margin-bottom: 1rem;
+    }
+    
+    .product-card p {
+        color: #666;
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+    }
+    
+    .rating {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    
+    .stars {
+        color: #ffd700;
+        margin-right: 0.5rem;
+    }
+    
+    .price {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #27ae60;
+        margin-bottom: 1rem;
+    }
+    
+    .affiliate-btn {
+        background: linear-gradient(45deg, #27ae60, #2ecc71);
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .affiliate-btn:hover {
+        background: linear-gradient(45deg, #219a52, #27ae60);
+        transform: translateY(-2px);
+    }
+    
+    /* Blog Section */
+    .blog-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+    
+    .blog-card {
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+    
+    .blog-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+    
+    .blog-image {
+        height: 200px;
+        background: linear-gradient(45deg, #667eea, #764ba2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 3rem;
+    }
+    
+    .blog-content {
+        padding: 1.5rem;
+    }
+    
+    .blog-card h3 {
+        font-size: 1.3rem;
+        color: #333;
+        margin-bottom: 1rem;
+    }
+    
+    .blog-card p {
+        color: #666;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+    }
+    
+    .read-more {
+        color: #667eea;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s ease;
+    }
+    
+    .read-more:hover {
+        color: #764ba2;
+    }
+    
+    /* Newsletter Section */
+    .newsletter {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white;
+        padding: 60px 0;
+        text-align: center;
+    }
+    
+    .newsletter h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .newsletter p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        opacity: 0.9;
+    }
+    
+    .newsletter-form {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .newsletter-form input {
+        flex: 1;
+        padding: 15px;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+    }
+    
+    .newsletter-form button {
+        background: #ff6b6b;
+        color: white;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+    
+    .newsletter-form button:hover {
+        background: #ee5a24;
+    }
+    
+    /* Footer */
+    footer {
+        background: #2c3e50;
+        color: white;
+        padding: 40px 0 20px;
+    }
+    
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .footer-section h3 {
+        margin-bottom: 1rem;
+        color: #ecf0f1;
+    }
+    
+    .footer-section p, .footer-section a {
+        color: #bdc3c7;
+        text-decoration: none;
+        line-height: 1.8;
+    }
+    
+    .footer-section a:hover {
+        color: #667eea;
+    }
+    
+    .footer-bottom {
+        text-align: center;
+        padding-top: 2rem;
+        border-top: 1px solid #34495e;
+        color: #95a5a6;
+    }
+    
+    /* Animations */
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .hero h1 {
+            font-size: 2.5rem;
+        }
+        
+        .hero p {
+            font-size: 1.1rem;
+        }
+        
+        .nav-links {
+            display: none;
+        }
+        
+        .newsletter-form {
+            flex-direction: column;
+        }
+        
+        .products-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    
+    /* SEO-friendly content sections */
+    .seo-content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+        background: #f8f9fa;
+        border-radius: 10px;
+        margin-bottom: 3rem;
+    }
+    
+    .seo-content h3 {
+        color: #333;
+        margin-bottom: 1rem;
+    }
+    
+    .seo-content p {
+        line-height: 1.8;
+        color: #555;
+        margin-bottom: 1rem;
+    }
+</style>
+```
+
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Smart Home Tech Hub</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#guides">Guides</a></li>
+                <li><a href="#compare">Compare</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+```
+<section class="hero" id="home">
+    <div class="container">
+        <h1>Transform Your Home with Smart Technology</h1>
+        <p>Expert reviews, installation guides, and money-saving tips for the best smart home devices in 2025</p>
+        <a href="#reviews" class="cta-button">See Top Rated Devices</a>
+    </div>
+</section>
+
+<main class="container">
+    <section class="section seo-content">
+        <h3>Why Smart Home Technology is Essential in 2025</h3>
+        <p>Smart home devices have revolutionized how we live, offering unprecedented convenience, security, and energy savings. Our comprehensive reviews help you choose the perfect smart home ecosystem for your needs and budget. From smart thermostats that can cut your energy bills by 23% to security cameras that provide 24/7 peace of mind, we've tested and reviewed hundreds of devices to bring you only the best recommendations.</p>
+        <p>Whether you're starting your smart home journey or upgrading existing systems, our expert guides cover everything from basic installation to advanced automation. Save money, increase your home's value, and enjoy the convenience of modern technology with our trusted recommendations.</p>
+    </section>
+
+    <section class="section" id="reviews">
+        <h2>Top Rated Smart Home Devices 2025</h2>
+        <div class="products-grid">
+            <article class="product-card">
+                <h3>Nest Learning Thermostat (4th Gen)</h3>
+                <div class="rating">
+                    <span class="stars">★★★★★</span>
+                    <span>4.8/5 (2,847 reviews)</span>
+                </div>
+                <p>The most advanced smart thermostat that learns your schedule and can reduce energy costs by up to 23%. Features include geofencing, remote control via app, and compatibility with 95% of heating and cooling systems.</p>
+                <div class="price">$249.99</div>
+                <a href="#" class="affiliate-btn">Check Best Price on Amazon</a>
+            </article>
+
+            <article class="product-card">
+                <h3>Ring Video Doorbell Pro 2</h3>
+                <div class="rating">
+                    <span class="stars">★★★★★</span>
+                    <span>4.6/5 (5,234 reviews)</span>
+                </div>
+                <p>Enhanced security with 1536p HD video, 3D Motion Detection, and built-in Alexa. See, hear, and speak to visitors from anywhere. Includes advanced motion zones and improved night vision.</p>
+                <div class="price">$279.99</div>
+                <a href="#" class="affiliate-btn">Check Best Price on Amazon</a>
+            </article>
+
+            <article class="product-card">
+                <h3>Philips Hue White & Color Starter Kit</h3>
+                <div class="rating">
+                    <span class="stars">★★★★☆</span>
+                    <span>4.5/5 (3,921 reviews)</span>
+                </div>
+                <p>Transform any room with 16 million colors and warm to cool white light. Voice control with Alexa, Google Assistant, and Apple HomeKit. Includes 4 bulbs and Hue Bridge for whole-home control.</p>
+                <div class="price">$199.99</div>
+                <a href="#" class="affiliate-btn">Check Best Price on Amazon</a>
+            </article>
+
+            <article class="product-card">
+                <h3>Amazon Echo Show 10 (3rd Gen)</h3>
+                <div class="rating">
+                    <span class="stars">★★★★★</span>
+                    <span>4.7/5 (1,876 reviews)</span>
+                </div>
+                <p>Revolutionary 10.1" HD screen that moves with you. Perfect for video calls, streaming, and controlling your smart home. Includes premium sound and built-in Zigbee hub for device connectivity.</p>
+                <div class="price">$249.99</div>
+                <a href="#" class="affiliate-btn">Check Best Price on Amazon</a>
+            </article>
+
+            <article class="product-card">
+                <h3>August Smart Lock Pro (3rd Gen)</h3>
+                <div class="rating">
+                    <span class="stars">★★★★☆</span>
+                    <span>4.4/5 (2,103 reviews)</span>
+                </div>
+                <p>Retrofit your existing deadbolt for keyless entry. Features auto-lock/unlock, guest access codes, and activity monitoring. Works with Alexa, Google Assistant, and Apple HomeKit.</p>
+                <div class="price">$279.99</div>
+                <a href="#" class="affiliate-btn">Check Best Price on Amazon</a>
+            </article>
+
+            <article class="product-card">
+                <h3>Arlo Pro 4 Security Camera System</h3>
+                <div class="rating">
+                    <span class="stars">★★★★★</span>
+                    <span>4.6/5 (4,567 reviews)</span>
+                </div>
+                <p>Wire-free 2K security cameras with color night vision, spotlight, and 2-way audio. Includes 3-month Arlo Secure trial for cloud storage and advanced AI detection features.</p>
+                <div class="price">$599.99</div>
+                <a href="#" class="affiliate-btn">Check Best Price on Amazon</a>
+            </article>
+        </div>
+    </section>
+
+    <section class="section" id="guides">
+        <h2>Latest Smart Home Guides & Reviews</h2>
+        <div class="blog-grid">
+            <article class="blog-card">
+                <div class="blog-image">🏠</div>
+                <div class="blog-content">
+                    <h3>Complete Smart Home Setup Guide for Beginners</h3>
+                    <p>Step-by-step instructions to build your first smart home system. Learn which devices to buy first, how to set them up, and avoid common mistakes that cost homeowners hundreds of dollars.</p>
+                    <a href="#" class="read-more">Read Full Guide →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image">🔒</div>
+                <div class="blog-content">
+                    <h3>Best Smart Security Systems of 2025 Compared</h3>
+                    <p>In-depth comparison of Ring, ADT, SimpliSafe, and Vivint. Real-world testing results, pricing breakdowns, and which system offers the best value for different home sizes.</p>
+                    <a href="#" class="read-more">Read Comparison →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image">💡</div>
+                <div class="blog-content">
+                    <h3>Smart Lighting Installation: DIY vs Professional</h3>
+                    <p>When to install smart switches yourself and when to call an electrician. Includes cost comparisons, safety guidelines, and our top recommendations for DIY-friendly smart lighting.</p>
+                    <a href="#" class="read-more">Read Guide →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image">🌡️</div>
+                <div class="blog-content">
+                    <h3>Smart Thermostats: Real Energy Savings Analysis</h3>
+                    <p>We monitored 50 homes for 12 months to measure actual energy savings from smart thermostats. See real data on which models save the most money and pay for themselves fastest.</p>
+                    <a href="#" class="read-more">See Results →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image">📱</div>
+                <div class="blog-content">
+                    <h3>Best Smart Home Apps and Automation Rules</h3>
+                    <p>Master your smart home with advanced automation. Learn how to create custom scenes, set up geofencing, and use IFTTT to connect devices from different manufacturers.</p>
+                    <a href="#" class="read-more">Learn More →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image">🛡️</div>
+                <div class="blog-content">
+                    <h3>Smart Home Privacy & Security Best Practices</h3>
+                    <p>Protect your smart home from hackers with our comprehensive security guide. Includes network setup, device configuration, and privacy settings most people forget to change.</p>
+                    <a href="#" class="read-more">Read Security Guide →</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="section seo-content">
+        <h3>How We Test and Review Smart Home Devices</h3>
+        <p>Our team of smart home experts conducts rigorous testing in real homes over extended periods. We evaluate installation difficulty, daily usability, app performance, integration capabilities, and long-term reliability. Every product recommendation is based on hands-on testing, not just manufacturer specifications.</p>
+        <p>We also consider value for money, customer support quality, and warranty coverage. Our affiliate partnerships never influence our honest reviews - we only recommend products we would use in our own homes. When you purchase through our links, you support our testing efforts at no extra cost to you.</p>
+    </section>
+</main>
+
+<section class="newsletter">
+    <div class="container">
+        <h2>Stay Updated with Smart Home Deals</h2>
+        <p>Get weekly deals, new product alerts, and exclusive buying guides delivered to your inbox</p>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email address" required>
+            <button type="submit">Subscribe Free</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Smart Home Tech Hub</h3>
+                <p>Your trusted source for smart home device reviews, installation guides, and technology recommendations. We help homeowners make informed decisions about smart home technology.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="#reviews">Product Reviews</a></p>
+                <p><a href="#guides">Installation Guides</a></p>
+                <p><a href="#compare">Product Comparisons</a></p>
+                <p><a href="#blog">Smart Home Blog</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Categories</h3>
+                <p><a href="#">Smart Thermostats</a></p>
+                <p><a href="#">Security Cameras</a></p>
+                <p><a href="#">Smart Lighting</a></p>
+                <p><a href="#">Voice Assistants</a></p>
+                <p><a href="#">Smart Locks</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <p><a href="#">Buying Guides</a></p>
+                <p><a href="#">Installation Help</a></p>
+                <p><a href="#">Troubleshooting</a></p>
+                <p><a href="#">Contact Support</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Smart Home Tech Hub. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Affiliate Disclosure</a></p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    // Header background change on scroll
+    window.addEventListener('scroll', function() {
+        const header = document.querySelector('header');
+        if (window.scrollY > 100) {
+            header.style.background = 'rgba(255, 255, 255, 0.98)';
+        } else {
+            header.style.background = 'rgba(255, 255, 255, 0.95)';
+        }
+    });
+
+    // Newsletter form submission
+    document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const email = this.querySelector('input[type="email"]').value;
+        alert('Thank you for subscribing! You\'ll receive our next newsletter with exclusive smart home deals.');
+        this.reset();
+    });
+
+    // Animate elements on scroll
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+
+    // Observe product cards and blog cards
+    document.querySelectorAll('.product-card, .blog-card').forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(30px)';
+        card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(card);
+    });
+
+    // Simulate affiliate link clicks for demo
+    document.querySelectorAll('.affiliate-btn').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('This would redirect to the affiliate product page (Amazon, Best Buy, etc.) where you earn commission on sales.');
+        });
+    });
+```
